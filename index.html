@@ -20,9 +20,27 @@
         <h1>Computer Trivia</h1>
     </div>
 
-
-    <button type="button" class="btn btn-primary btn-lg">Start Game</button>
-
+    <div class="col-sm-12 text-center">
+        <button type="button" class="btn btn-primary btn-lg">Start Game</button>
+    </div>
+    <div id="timer"></div>
+    <br>
+    <br>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <h3>Time Remaining: <span id="display"></span></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2>Results</h2>
+                <h3>Correct: <span id="correctAns"></span></h3>
+                <h3>Incorrect: <span id="incorrectAns"></span></h3>
+            </div>
+        </div>
+    </div>
+    <br>
     <div class="row text-center">
         <div class="col-sm-12">
             <p><strong>1. What was the first publicly traded U.S. company to reach a $1 trillion market cap?</strong></p>
@@ -67,16 +85,24 @@
         <div class="col-sm-12">
             <p><strong>5. SNES is the acronym for what popular gaming console released in the early 1990s?</strong></p>
             <form>
-                <input type="radio" name="Q5A" value="Sensor Numatic Engraving Signs"> Sensor Numatic Engraving Signs
-                <input type="radio" name="Q5A" value="Super Nintendo Entertainment System"> Super Nintendo Entertainment System
-                <input type="radio" name="Q5A" value="System Neon Entertainment Source"> System Neon Entertainment Source
+                <input type="radio" name="Q5A" value="Sensor Numatic Engraving Signs"> Sensor Numatic Engraving
+                Signs
+                <input type="radio" name="Q5A" value="Super Nintendo Entertainment System"> Super Nintendo
+                Entertainment System
+                <input type="radio" name="Q5A" value="System Neon Entertainment Source"> System Neon Entertainment
+                Source
             </form>
         </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-sm-12 text-center">
+        <button type="button2" class="btn btn-primary btn-lg">Submit</button>
     </div>
 
 
 
-
 </body>
+<script src="assets/javascript/app.js"></script>
 
 </html>
