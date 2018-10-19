@@ -1,7 +1,7 @@
 var timer = 30
 var display = 00;
 var correctAns = 0;
-var question1 = ["Apple", "Facebook", "Google"];
+var question1 = [];
 var qAns = ["Apple", "Ask Me Anything", "Central Processing Unit", "Twitter", "Super Nintendo Entertainment System"];
 var incorrectAns = 0;
 var intervalId;
@@ -16,10 +16,11 @@ function decrement() {
 }
 //Function to track correct and incorrect choices
 function count() {
-    if (question1 === qAns) {
-    correctAns++;
-    document.getElementById("correctAns").innerHTML = correctAns;
-} else {
+    if (questionAns === "Apple") {
+        correctAns++;
+        document.getElementById("correctAns").innerHTML = correctAns;
+    } else {
+        (questionAns !== "Apple");
         incorrectAns++;
         document.getElementById("incorrectAns").innerHTML = incorrectAns;
     }
@@ -37,7 +38,7 @@ $("button").on("click", function () {
         count();
     })
 
-    //Responses are captured in the results box
+    //Function "Stop" stops the timer when it reaches zero
 })
 function stop() {
     clearInterval(intervalId);
