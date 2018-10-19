@@ -1,15 +1,16 @@
 .jumbotron {
     background-image: url(../images/light\ bulbs.jpg);
-    background: cover, no-repeat;
-    color: yellowgreen;
+    background-size: 50%;
+    background-position: center top;
+    color: navy;
     font-weight: bold;
 }
 body {
     margin-bottom: 100px;
-    background-image: url(../images/question-mark.jpg), no-repeat;
+    width: 100%;
+    background-image: url(../images/question-mark-dark.jpg);
+    background-size: cover;
 }
-.container {
-    width: 80%;
-    background-color: lightgreen;
-    border-color: blue;
+.row {
+    color: white;
 }
