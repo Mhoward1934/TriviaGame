@@ -1,12 +1,11 @@
 var timer = 30
 var display = 00;
 var correctAns = 0;
-var questionAns = qAns;
+var question1 = ["Apple", "Facebook", "Google"];
 var qAns = ["Apple", "Ask Me Anything", "Central Processing Unit", "Twitter", "Super Nintendo Entertainment System"];
 var incorrectAns = 0;
-var score = 0;
 var intervalId;
-
+//console.log(question1);
 
 function decrement() {
     timer--;
@@ -15,15 +14,15 @@ function decrement() {
         stop()
     }
 }
-//Counts correct and incorrect choices
+//Function to track correct and incorrect choices
 function count() {
-    questionAns === qAns;
+    if (question1 === qAns) {
     correctAns++;
     document.getElementById("correctAns").innerHTML = correctAns;
-    if (questionAns !== qAns) {
+} else {
         incorrectAns++;
         document.getElementById("incorrectAns").innerHTML = incorrectAns;
-    }  
+    }
 }
 
 //When the player clicks the "Start Game" button the button is hidden and the timer starts
@@ -33,19 +32,13 @@ $("button").on("click", function () {
     $(this).hide();
     //console.log();
 
-    //Tracking player answers
+    //When the player clicks on a radio button the response is collected using the "function count" as outlined above
     $("#questionAns").on("click", function () {
-        count()
+        count();
     })
 
-
-
-
+    //Responses are captured in the results box
 })
-
-
-
-
 function stop() {
     clearInterval(intervalId);
 }
