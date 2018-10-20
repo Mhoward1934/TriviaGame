@@ -8,6 +8,7 @@ In this assignment, we created a Trivia game using JavaScript for the logic and 
 In this game there are 5 questions that the player has to answer within 30 seconds.  When your time is up or once you are complete the results of your efforts are revealed.
 
 Here is the link to the game:
+https://mhoward1934.github.io/TriviaGame/
 
 ## Built With
 #### HTML5
