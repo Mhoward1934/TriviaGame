@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- <link rel="stylesheet" type="text/javascript" href="assets/javascript/app.js"> -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <title>Computer Trivia</title>
 </head>
 
@@ -20,86 +19,108 @@
         <h1>Computer Trivia</h1>
     </div>
 
-    <section class="data">
-
-        <div class="col-sm-12 text-center">
-            <button type="button" class="btn btn-primary btn-lg">Start Game</button>
+    <div class="col-sm-12 text-center">
+        <button type="button" class="btn btn-primary btn-lg">Start Game</button>
+    </div>
+    <div id="timer"></div>
+    <br>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <h3>Time Remaining: <span id="display"></span></h3>
         </div>
-        <div id="timer"></div>
-        <br>
+    </div>
+    <br>
+    <div class="container">
         <div class="row text-center">
             <div class="col-sm-12">
-                <h3>Time Remaining: <span id="display"></span></h3>
+                <h2><strong>Results</strong></h2>
             </div>
         </div>
-        <br>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <h2><strong>Results</strong></h2>
-                </div>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <h3>Correct: <span id="correctAns"></span></h3>
             </div>
-            <div class="row text-center">
-                <div class="col-sm-6">
-                    <h3>Correct: <span id="correctAns"></span></h3>
-                </div>
-                <div class="col-sm-6">
-                    <h3>Incorrect: <span id="incorrectAns"></span></h3>
-                </div>
+            <div class="col-sm-6">
+                <h3>Incorrect: <span id="incorrectAns"></span></h3>
             </div>
         </div>
-        <br>
+    </div>
+    <!-- Radio buttons do not hold value of clicked answer from question to question -->
+    <br>
+    <section class="data">
         <div class="row text-center">
             <div class="col-sm-12">
                 <p><strong>1. What was the first publicly traded U.S. company to reach a $1 trillion market cap?</strong></p>
-                <form>
-                    <input type="radio" name="question1" value="Apple"> Apple
-                    <input type="radio" name="question1" value="Facebook"> Facebook
-                    <input type="radio" name="question1" value="Google"> Google
-                </form>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" checked> Apple</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Facebook</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Google</label>
+                </div>
             </div>
-        </div><br>
+        </div>
+        <br>
         <div class="row text-center">
             <div class="col-sm-12">
                 <p><strong>2. On the popular social website Reddit, what does AMA stand for?</strong></p>
-                <form>
-                    <input type="radio" name="Q2A" value="American Music Awards"> American Music Awards
-                    <input type="radio" name="Q2A" value="Ask Me All-Things"> Ask Me All-Things
-                    <input type="radio" name="Q2A" value="Ask Me Anything"> Ask Me Anything
-                </form>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" checked> American Music Awards</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Ask Me Anything</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Ask Me All-Things</label>
+                </div>
             </div>
-        </div><br>
+        </div>
+        </div>
+        <br>
         <div class="row text-center">
             <div class="col-sm-12">
                 <p><strong>3. What do the letters CPU stand for when referring to the “brains” of a computer?</strong></p>
-                <form>
-                    <input type="radio" name="Q3A" value="Central Processing Unit"> Central Processing Unit
-                    <input type="radio" name="Q3A" value="Center Piece Unit"> Center Piece Unit
-                    <input type="radio" name="Q3A" value="Central Planning Unit"> Central Planning Unit
-                </form>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" checked> Central Processing Unit</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Center Piece Unit</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Central Planning Unit</label>
+                </div>
             </div>
-        </div><br>
+        </div>
+        <br>
         <div class="row text-center">
             <div class="col-sm-12">
                 <p><strong>4. On which popular website do users send tweets?</strong></p>
-                <form>
-                    <input type="radio" name="Q4A" value="Instagram"> Instagram
-                    <input type="radio" name="Q4A" value="Facebook"> Facebook
-                    <input type="radio" name="Q4A" value="Twitter"> Twitter
-                </form>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" checked> Instagram</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Git Hub</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Twitter</label>
+                </div>
             </div>
-        </div><br>
+        </div>
+        <br>
         <div class="row text-center">
             <div class="col-sm-12">
                 <p><strong>5. SNES is the acronym for what popular gaming console released in the early 1990s?</strong></p>
-                <form>
-                    <input type="radio" name="Q5A" value="Sensor Numatic Engraving Signs"> Sensor Numatic Engraving
-                    Signs
-                    <input type="radio" name="Q5A" value="Super Nintendo Entertainment System"> Super Nintendo
-                    Entertainment System
-                    <input type="radio" name="Q5A" value="System Neon Entertainment Source"> System Neon Entertainment
-                    Source
-                </form>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" checked> Super Nintendo Entertainment System</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> System Neon Entertainment Source</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Sensor Numatic Engraving Signs</label>
+                </div>
             </div>
         </div>
     </section>
