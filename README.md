@@ -10,3 +10,8 @@ In this game there are 5 questions that the player has to answer within 30 secon
 Here is the link to the game:
 
 ## Built With
+#### HTML5
+#### CSS
+#### [Bootstrap](https://getbootstrap.com) - Framework
+#### Javascript
+#### [jQuery](https://api.jquery.com) - Javascript Library
